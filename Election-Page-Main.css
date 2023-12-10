@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html{
+    max-width: 100%;
+}
+
+body{
+    max-width: 100%;
+    background-color: #f2f2f7;
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0 auto;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background:linear-gradient(135deg,  rgba(242, 242, 247, .1),  rgba(242, 242, 247, 0));
+    padding: auto;
+    overflow: hidden;
+}
+
+#nav li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    margin-right: 11.5px; 
+    margin-left: 11.5px;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-family: serif;
+    color: #2c2c2e;
+    font-size: 8px;
+    padding: 3px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    letter-spacing: .009em;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* --voting--form-- begins */
+
+.--voting--form--{
+    display: block;
+    height: 600px;
+    width: 1440px;
+    background-color: #f2f2f7;
+}
+
+.--background--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1440px;
+    background-color: #f2f2f7;
+}
+
+.--form--details--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 425px;
+    color: rgb(58, 58, 60);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, .4);
+    border-radius: 12px;
+    border: 1px solid #bababe;
+} 
+
+.--form--login-- h1{
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    font-family: Helvetica;
+    justify-content: center;
+    align-items: center;
+    color: #2c2c2e;
+}
+
+.--form--login-- form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    color: rgb(58, 58, 60);
+}
+
+form .--txt--field--{
+    position: relative;
+    border: 1px solid #2c2c2e;
+    margin: 30px 0px;
+    border: none;
+    color: rgb(58, 58, 60);
+    width: 250px;
+}
+
+.--txt--field-- input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #2c2c2e;
+    border-radius: 12px;
+    background: none;
+    outline: none;
+}
+
+.--txt--field-- label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #007aff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.--txt--field-- span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 2px;
+}
+
+.--txt--field-- input:focus ~ label,
+.--txt--field-- input:valid ~ label{
+    padding: 0px 0px 30px 5px;
+    font-size: 10px;
+    left: 5px;
+}
+
+.--pass--{
+    margin: -5px 0px 20px 5px;
+    color: rgba(0, 122, 255);
+    cursor: pointer;
+    left: 15px;
+    padding: 0px 0px 0px 10px;
+}
+
+.--pass--:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    background: rgba(58, 58, 60, 1);
+    color:#f2f2f7;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.--signup--link--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+.--signup--link-- a{
+    color: #007aff;
+    text-decoration: none;
+}
+/* --voting--form-- ends */
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* --procedure begins */
+.--procedure--{
+    margin: 200px 0px;
+    height: 30vh;
+    width: 1440px;
+}
+
+.--blur--image--{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 1330px;
+    border-radius: 30px;
+    background-color: #aa053f;
+    overflow: hidden;
+    margin-left: 55px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+
+
+/* --procedure begins */
+
+/* ------------------------------------------------------------------------------------------------- */
+/* --nominees begins */
+
+.--nominees--{
+    display: block;
+    height: 100vh;
+    width: 1440px;
+}
+
+.--pfps--{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 50px 0px 50px;
+}
+
+.--nominee--{
+    height: 80vh;
+    width: 377.5px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 0px 10px;
+}
+
+.--image--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.--pfp--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    color: black;
+}
+
+.--speech--{
+    display: flex;
+    justify-content: center;
+}
+
+.quotes {
+    display:block;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+}
+
+/* --nominees ends */
