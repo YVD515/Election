@@ -262,6 +262,11 @@ input[type="submit"]{
     color: black;
 }
 
+.--pfp-- img{
+    height: 200px;
+    width: 200px;
+}
+
 .--speech--{
     display: flex;
     justify-content: center;
